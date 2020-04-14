@@ -1,4 +1,4 @@
-# Base Maven Project
+# Base Project Maven
 Speed and consistency of development is essential for a strong software company. 
 A base project setup can provide that essential foundation for accelerating development efforts. 
 It has
