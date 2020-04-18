@@ -16,10 +16,10 @@ and create consistency for months and years ahead.
 4. Start IntelliJ IDEA -> Get from Version Control -> GitHub -> https://github.com/romanastr/base-project-maven.git ->
 specify the directory -> Clone.
 5. Open Terminal Tool Window in IntelliJ: View -> Tool Windows -> Terminal.
-6. Login to docker with `docker login registry.hub.docker.com` command (works on any operating system).
+6. Login to docker with `docker login` command (works on any operating system).
 7. Switch to your own username on Docker Hub in JIB plugin configuration (see description of the 
 plugin below) in [demo/pom.xml](demo/pom.xml) file: 
-`<image>registry.hub.docker.com/YOUR_USERNAME/YOUR_PROJECT_NAME:YOUR_TAG</image>`.
+`<image>index.docker.io/YOUR_USERNAME/YOUR_PROJECT_NAME:YOUR_TAG</image>`.
 Specify docker credentials helper for your operating system in parent [pom.xml](pom.xml) as
  `<credHelper>YOUR_HELPER</credHelper>`.  Substitute `YOUR_HELPER` with `desktop` in Windows 10. 
   Check that your chosen helper is available by running `docker-credential-YOUR_HELPER list` 
