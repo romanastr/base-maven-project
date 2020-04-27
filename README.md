@@ -69,18 +69,6 @@ dependency provides  embedded  Tomcat to run a web server on, by default on port
 `spring-boot-starter-actuator`  dependency provides production-ready features for application
 monitoring and management including a health check endpoint at "actuator/health" url path.
 
-## Types of tests and test coverage
-[The traditional test pyramid](https://medium.com/better-programming/the-test-pyramid-80d77535573) 
-heavily relies on the foundations built with the unit tests. They are easy to execute 
-and can readily test all special conditions. A smaller set of 
-longer running integration tests allows checking functionality of the application 
-for a subset of inputs. It is highly beneficial to have 100% code coverage with unit tests.
-The difference between 95% code coverage and 100% code coverage is huge - when forced to test
-everything, one would naturally simplify the code and eliminate impossible paths, while allowing for
-adequate [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). This readily 
-becomes a good habit. The integration tests might not need to have any specific code coverage target, 
-but would rather test overall application functionality.
-
 ## Maven plugins
 The power of Maven in its plugins. The following plugins make the base project work:
 * [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) facilitates 
@@ -120,6 +108,18 @@ Several profiles are introduced to toggle plugin executions:
 It is active by default / if no profiles are specified;
 * `integration-tests` profile enables running integration tests independently of unit tests;
 * `image-build` profile enables building Docker image and uploading it to DockerHub registry.
+
+## Types of tests and test coverage
+[The traditional test pyramid](https://medium.com/better-programming/the-test-pyramid-80d77535573) 
+heavily relies on the foundations built with the unit tests. They are easy to execute 
+and can readily test all special conditions. A smaller set of 
+longer running integration tests allows checking functionality of the application 
+for a subset of inputs. It is highly beneficial to have 100% code coverage with unit tests.
+The difference between 95% code coverage and 100% code coverage is huge - when forced to test
+everything, one would naturally simplify the code and eliminate impossible paths, while allowing for
+adequate [defensive programming](https://en.wikipedia.org/wiki/Defensive_programming). This readily 
+becomes a good habit. The integration tests might not need to have any specific code coverage target, 
+but would rather test overall application functionality.
 
 ## .gitignore
 .gitignore file specifies to Git, which files should be ignored in status checks and never committed
