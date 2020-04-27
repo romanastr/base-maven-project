@@ -19,6 +19,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- dependencies -->
     <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
+    <spring-doc.version>1.3.4</spring-doc.version>
     <!-- plugins -->
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
@@ -40,6 +41,11 @@
         <version>${spring-boot.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi-ui</artifactId>
+        <version>${spring-doc.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
