@@ -75,7 +75,7 @@
         <artifactId>jib-maven-plugin</artifactId>
         <configuration>
           <to>
-            <image>index.docker.io/romanastr/base-maven-project:1.0</image>
+            <image>index.docker.io/romanastr/base-project-maven:1.0</image>
           </to>
           <container>
             <ports>
