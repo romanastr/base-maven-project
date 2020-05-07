@@ -33,7 +33,7 @@ working with Maven.
 9. Run the produced docker image on your local machine:
 `docker run -p 8080:8080 --rm --name maven YOUR_USERNAME/YOUR_PROJECT_NAME:YOUR_TAG`.
 Alternatively, you can run a pre-compiled docker image from the base project:
-`docker run -p 8080:8080 --rm --name maven romanastr/base-maven-project:1.0`.
+`docker run -p 8080:8080 --rm --name maven romanastr/base-project-maven:1.0`.
 10. Check that the Demo application is live by opening the health check URL in the browser: 
 http://localhost:8080/actuator/health - you should see the following JSON response: 
 `{"status":"UP"}`.
